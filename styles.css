@@ -1,21 +1,29 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
   }
-  
+
   #container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
   }
-  
-  .ball {
+
+  .button {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    border-radius: 50%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
     cursor: pointer;
+    transition: transform 0.3s ease;
   }
-  
+
+  #si-button:hover {
+    transform: translate(calc(100vw - 100%), calc(100vh - 100%));
+  }
+
+  #no-button:hover {
+    transform: translate(calc(100vw - 100%), calc(100vh - 100%));
+  }
